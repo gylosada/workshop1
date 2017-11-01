@@ -1,0 +1,197 @@
+@import "_reset";
+@import "_fonts";
+
+header{
+	height: 220px;
+	background: #45bfb8; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #45bfb8 0%, #76085e 80%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #45bfb8 0%,#76085e 80%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #45bfb8 0%,#76085e 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45bfb8', endColorstr='#76085e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	#contenedor{
+		width: 80%;
+		margin: auto;
+		padding-top: 50px;
+		@media (max-width: 1240px){
+			width: 90%;
+		}
+		h1{
+			font-family: $fuente;
+			font-weight: 700;
+			font-size: 60px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid white;
+			color: white;
+			margin-bottom: 1.8%;
+		}
+		div{
+			#formulario{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				input{
+					border: none;
+					height: 44px;
+					border-radius: 10px;
+					font-family: $fuente;
+					color: $gris1;
+					font-size: 16px;
+					padding: 0 15px;
+					//margin-right: 1.8%;
+					box-sizing: border-box;
+				}
+				input:nth-child(1){
+					width: 23.6%;
+					min-width: 175px;
+				}
+				input:nth-child(2){
+					width: 55%;
+					@media (max-width: 830px){
+						width: 50%;
+					}
+				}
+				input:last-child{
+					width: 17%;
+					min-width: 120px;
+					background: $naranja;
+					font-size: 22px;
+					color: white;
+					margin-right: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+section{
+	padding-top: 25px;
+	width: 80%;
+	margin: auto;
+	@media (max-width: 1240px){
+		width: 90%;
+	}
+	#barra{
+		border-bottom: 1px solid $gris1;
+		padding-bottom: 25px;
+		display: flex;
+		justify-content: space-between;
+		form{
+			display: inline-block;
+			input{
+				display: inline-block;
+			    border: none;
+			    background: $celclaro;
+				height: 44px;
+				border-radius: 10px;
+				font-family: $fuente;
+				color: $gris1;
+				font-size: 16px;
+				padding: 0 15px;
+				margin-right: 20px;
+				box-sizing: border-box;
+			}
+			input:last-child{
+				border: none;
+				background: $celeste;
+				color: white;
+			}
+		}
+		button{
+			display: inline-block;
+			border: none;
+			background: $naranja;
+			color: white;
+			font-family: $fuente;
+			font-size: 16px;
+			border-radius: 10px;
+			height: 44px;
+			padding: 0 15px;
+			margin-right: 20px;
+		}
+		button:nth-child(4),
+		button:nth-child(5){
+			border: none;
+			background: $violeta;
+			color: white;
+			font-family: $fuente;
+			font-size: 16px;
+		}
+		button:last-child{
+			margin-right: 0;
+		}
+	}
+	#cajaTareas{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		div{ 
+		    width: 23.5%;
+		    margin: 25px 0.75% 0 0.75%;
+			height: 250px;
+			background: $celclaro;
+			border-radius: 10px;
+			padding: 20px;
+			box-sizing: border-box;
+			h3{
+				font-family: $fuente;
+				font-size: 26px;
+				font-weight: 700;
+				color: $violeta;
+				border-bottom: 1px solid $violeta;
+				padding-bottom: 15px;
+			}
+			p{
+				padding-top: 15px;
+				font-family: $fuente;
+				font-style: italic;
+				font-size: 16px;
+				color: $gris2;
+				padding-bottom: 15px;
+			}
+			div{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			    height: auto;
+			    background: none;
+			    border-radius: 0;
+			    padding: 0;
+				button{
+					border: 3px solid $gris1;
+					background: none;
+					border-radius: 10px;
+					height: 44px;
+					padding: 0 10px;
+					//margin-right: 20px;
+					font-size: 25px;
+	    			color: #A0A0A0;
+				}
+				button:last-child{
+					margin-right: 0;
+					color: $celclaro;
+				}
+				button:hover{
+					background: $gris1;
+					color: $celclaro;
+				}
+			}
+		}
+		.completa{
+			opacity: 0.35;
+			button:last-child{
+				background: $gris1;
+				color: $celclaro;    			
+			}
+			button:last-child:hover{
+				background: none;
+				color: $gris1;
+			}
+		}
+	}
+}
+
+
+

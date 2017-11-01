@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Workshop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body onload="mostrarAutomatico()">
+	<header>
+		<div id="contenedor">
+			<h1>Listado de tareas</h1>
+			<div>
+				<form id="formulario">
+					<input type="text" name="tarea" placeholder="Nombre de la tarea">
+					<input type="text" name="descripcion" placeholder="Descripción">	
+					<input type="submit" name="agregar" value="Agregar">
+				</form>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+		<div id="barra">
+			<form id="buscador">
+				<input type="text" name="buscar" placeholder="Buscar tarea">
+				<input type="submit" name="buscar" id="buscar" value="Buscar">
+			</form>
+			<div id="btnMostrarEliminar">
+				<button id="mostrar">Mostrar Todo</button>
+				<button id="eliminarTodo">Eliminar Todo</button>
+			</div>
+
+			<div id="ordenarAmbos">
+				<button id="ordenarAZ">AZ</button>
+				<button id="ordenarZA">ZA</button>	
+			</div>
+		</div>
+
+		<div id="cajaTareas">
+
+		</div>
+	</section>
+
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
